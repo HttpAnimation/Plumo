@@ -8,7 +8,7 @@
   "keywords": [],
   "author": "HttpAnimation",
   "license": "ISC",
-  "description": "",
+  "description": "A browser based in js",
   "devDependencies": {
     "electron": "^29.1.6"
   }
