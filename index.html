@@ -55,13 +55,13 @@
         <button id="search-button">Go</button>
     </div>
     <div id="webview-container">
-        <webview src="https://www.example.com"></webview>
+        <webview id="webview" src="https://www.example.com"></webview>
     </div>
 
     <script>
         const searchInput = document.getElementById('search-input');
         const searchButton = document.getElementById('search-button');
-        const webview = document.querySelector('webview');
+        const webview = document.getElementById('webview');
 
         // Event listener for search button click
         searchButton.addEventListener('click', () => {
