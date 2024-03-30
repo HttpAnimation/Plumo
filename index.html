@@ -2,54 +2,7 @@
 <html>
 <head>
     <title>Electron Browser</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            height: 100vh; /* Ensure body covers entire viewport height */
-            overflow: hidden; /* Hide scrollbars */
-        }
-        #search-bar {
-            width: 100%;
-            height: 50px;
-            background-color: #f0f0f0;
-            display: flex;
-            align-items: center;
-            padding: 0 20px;
-            box-sizing: border-box;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        #search-input {
-            width: calc(100% - 100px);
-            height: 30px;
-            padding: 5px 10px;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-        #search-button {
-            width: 80px;
-            height: 40px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            margin-left: 10px;
-        }
-        #iframe-container {
-            width: 100%;
-            height: calc(100% - 50px); /* Subtract height of search bar */
-            overflow: hidden;
-        }
-        iframe {
-            width: 100%;
-            height: 100%; /* Fill entire container height */
-            border: none;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
     <div id="search-bar">
