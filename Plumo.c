@@ -2,17 +2,16 @@
 #include <stdio.h> // Include stdio.h for printf
 
 int main() {
-    // Run if the SilverOS app does not work
-    int status = system("npm start"); // Adjust the path to npm as needed
+    int status = system("electron ."); // Adjust the path to electron as needed
     printf("test\n"); // Add a newline character to ensure the message is displayed
 
     if (status == -1) {
-        printf("Error executing npm start command\n");
+        printf("Error executing electron . command\n");
     } else if (WIFEXITED(status)) {
         int exit_status = WEXITSTATUS(status);
-        printf("npm start exited with status: %d\n", exit_status);
+        printf("electron . exited with status: %d\n", exit_status);
     } else {
-        printf("npm start did not exit normally\n");
+        printf("electron . did not exit normally\n");
     }
 
     return 0;
