@@ -37,12 +37,12 @@
             cursor: pointer;
             margin-left: 10px;
         }
-        #webview-container {
+        #iframe-container {
             width: 100%;
             height: calc(100% - 50px);
             overflow: hidden;
         }
-        webview {
+        iframe {
             width: 100%;
             height: 100%;
             border: none;
@@ -54,14 +54,14 @@
         <input type="text" id="search-input" placeholder="Enter URL">
         <button id="search-button">Go</button>
     </div>
-    <div id="webview-container">
-        <webview id="webview" src="https://www.example.com"></webview>
+    <div id="iframe-container">
+        <iframe id="webview" src="https://www.example.com"></iframe>
     </div>
 
     <script>
         const searchInput = document.getElementById('search-input');
         const searchButton = document.getElementById('search-button');
-        const webview = document.getElementById('webview');
+        const iframe = document.getElementById('webview');
 
         // Event listener for search button click
         searchButton.addEventListener('click', () => {
@@ -78,9 +78,9 @@
         // Function to navigate to a URL
         function navigateToURL(url) {
             if (url.startsWith('http://') || url.startsWith('https://')) {
-                webview.src = url;
+                iframe.src = url;
             } else {
-                webview.src = 'https://' + url;
+                iframe.src = 'https://' + url;
             }
         }
     </script>
