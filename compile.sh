@@ -1,0 +1,1 @@
+gcc Plumo.c -o Plumo
