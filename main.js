@@ -1,4 +1,8 @@
 const { app, BrowserWindow } = require('electron');
+const path = require('path');
+
+console.log('Loading index.html from:', path.join(__dirname, 'index.html'));
+win.loadFile(path.join(__dirname, 'index.html'));
 
 function createWindow() {
     const win = new BrowserWindow({
