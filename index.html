@@ -38,6 +38,13 @@
                 iframe.src = 'https://' + url;
             }
         }
+
+        // Event listener for 'p' key press to toggle dark mode
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'p') {
+                document.body.classList.toggle('dark-mode');
+            }
+        });
     </script>
 </body>
 </html>
